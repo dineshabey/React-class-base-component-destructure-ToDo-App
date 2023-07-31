@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import HomePage from './layouts/HomePage'
 
-class App extends Component {
+
+export default class App extends Component {
   render() {
-    return <div>
-      Hi ! class base componets working
-    </div>;
+    return (
+      <div>
+        <HomePage/>
+      </div>
+    )
   }
 }
-export default App;
