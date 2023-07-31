@@ -8,8 +8,16 @@ export default class HomePage extends Component {
         return (
             <div>
                 <TopNavigation />
-                <NewTaskAdd/>
-                <ToDoList/>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <div>
+                        <h2>ToDo List</h2>
+                        <NewTaskAdd />
+                        <div style={{ marginTop: '20px' }}>
+                            <ToDoList />
+
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
