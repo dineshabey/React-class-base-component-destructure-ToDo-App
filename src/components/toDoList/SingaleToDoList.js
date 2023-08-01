@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ToDoTitle from './singaleToDo/ToDoTitle'
 
 export default class SingaleToDoList extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class SingaleToDoList extends Component {
 
       }}>
         <input onChange={() => { }} type={'checkbox'} checked={isCompleted} />
-        <p style={{ fontWeight: isBold ? 'bold' : '', color: testColor }}>{title}</p>
+        <ToDoTitle testColor={testColor} title={title} isBold={isBold} />
         <button>Delete</button>
       </div>
     )
