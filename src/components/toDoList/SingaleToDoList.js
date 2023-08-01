@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class SingaleToDoList extends Component {
   render() {
+    const { testColor, title, isBold, isCompleted } = this.props
     return (
       <div style={{
         display: 'flex',
@@ -12,10 +13,8 @@ export default class SingaleToDoList extends Component {
         padding: '5px',
 
       }}>
-        {/* <input type={'checkbox'} checked={isCompleted} /> */}
-        <input type={'checkbox'}  />
-        <p>First Task</p>
-        {/* <p style={{ fontWeight: isBold ? 'bold' : '', color: testColor }}>{title}</p> */}
+        <input onChange={() => { }} type={'checkbox'} checked={isCompleted} />
+        <p style={{ fontWeight: isBold ? 'bold' : '', color: testColor }}>{title}</p>
         <button>Delete</button>
       </div>
     )
